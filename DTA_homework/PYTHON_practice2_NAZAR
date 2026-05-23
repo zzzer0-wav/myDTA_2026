@@ -680,7 +680,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 1,
+      "execution_count": null,
       "id": "b0e7dd80",
       "metadata": {
         "id": "b0e7dd80",
@@ -737,7 +737,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 7,
+      "execution_count": null,
       "id": "e026f014",
       "metadata": {
         "id": "e026f014",
@@ -806,7 +806,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 9,
+      "execution_count": null,
       "id": "7730132d",
       "metadata": {
         "id": "7730132d",
@@ -865,7 +865,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 11,
+      "execution_count": null,
       "id": "c6976429",
       "metadata": {
         "id": "c6976429",
@@ -934,7 +934,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 15,
+      "execution_count": null,
       "id": "91791501",
       "metadata": {
         "id": "91791501",
@@ -1152,12 +1152,26 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 5,
       "id": "46b04590",
       "metadata": {
-        "id": "46b04590"
+        "id": "46b04590",
+        "outputId": "150c8b54-ce78-47e5-dbc3-8d39cfe42df3",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 108
+        }
       },
-      "outputs": [],
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "invalid syntax. Maybe you meant '==' or ':=' instead of '='? (463007760.py, line 17)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipykernel_18384/463007760.py\"\u001b[0;36m, line \u001b[0;32m17\u001b[0m\n\u001b[0;31m    if key = 1:\u001b[0m\n\u001b[0m       ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax. Maybe you meant '==' or ':=' instead of '='?\n"
+          ]
+        }
+      ],
       "source": [
         "attendance = {\n",
         "    \"Олена\":   [1, 1, 1, 1, 1],\n",
@@ -1169,7 +1183,15 @@
         "    \"Дарʼя\":   [1, 1, 1, 1, 0],\n",
         "    \"Михайло\": [1, 0, 0, 1, 1]\n",
         "}\n",
-        "# Ваш код:\n"
+        "# Ваш код:\n",
+        "counted_days = 0\n",
+        "all_days = []\n",
+        "absences = [0, 0, 0, 0, 0]\n",
+        "\n",
+        "for key in attendance.keys():\n",
+        "    if key = 1:\n",
+        "        counted_days += key\n",
+        "print(counted_days)"
       ]
     },
     {
